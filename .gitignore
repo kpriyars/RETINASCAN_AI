@@ -1,5 +1,4 @@
-venv/
 kermany2018/
+venv/
 *.zip
-__pycache__/
 .DS_Store
