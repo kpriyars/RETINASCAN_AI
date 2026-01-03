@@ -35,5 +35,5 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
-st.title("👁️ RetinaScan AI")
+
 # ... (rest of your UI code)
