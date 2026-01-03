@@ -1,0 +1,5 @@
+venv/
+kermany2018/
+*.zip
+__pycache__/
+.DS_Store
