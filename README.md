@@ -18,32 +18,74 @@
 
 ---
 
-## 🩺 The Clinical Challenge
-Early detection of retinal diseases is critical to preventing permanent vision loss. RetinaScan AI provides an automated preliminary screening for:
+# RetinaScan AI – Retinal Disease Detection using Deep Learning
 
-* **CNV (Choroidal Neovascularization):** Identifying abnormal sub-retinal vessel growth.
-* **DME (Diabetic Macular Edema):** Detecting fluid accumulation in the macula.
-* **DRUSEN:** Early signs of age-related macular degeneration.
-* **NORMAL:** Confirming healthy retinal structural integrity.
+## Overview
+RetinaScan AI is a deep learning-based web application that performs automated screening of retinal diseases using OCT (Optical Coherence Tomography) images.
 
+The model classifies retinal scans into four categories:
+- CNV (Choroidal Neovascularization)
+- DME (Diabetic Macular Edema)
+- DRUSEN
+- NORMAL
 
+## Problem Statement
+Early detection of retinal diseases is critical to preventing irreversible vision loss. Manual diagnosis requires trained specialists and is time-intensive.
 
-## 🧠 Technical Workflow
-1.  **Data:** Trained on 84,495 OCT images from the **Kermany 2018 Dataset**.
-2.  **Architecture:** Utilizes a **Deep Residual Network (ResNet-18)** for high-feature extraction.
-3.  **Optimization:** Implements **Transfer Learning** to adapt ImageNet weights to medical textures.
-4.  **Deployment:** Cloud-native architecture using **Streamlit Community Cloud** and **Google Drive API** for model weight management.
+This project builds an AI-based system to assist in fast and scalable preliminary screening.
 
+## Dataset
+- **Kermany 2018 OCT Dataset**
+- Total Images: 84,495
+- Classes: CNV, DME, DRUSEN, NORMAL
 
+## Model Architecture
+- **ResNet-18 (Deep Residual Network)**
+- Transfer Learning using pretrained ImageNet weights
+- Fine-tuned for multi-class retinal image classification
 
-## 🛠️ Installation & Usage
+## Training Details
+- Loss Function: Cross-Entropy Loss  
+- Optimizer: Adam  
+- Epochs: ___  
+- Training Accuracy: ___%  
+- Validation Accuracy: ___%  
+
+## Results
+- Multi-class classification across 4 retinal conditions  
+- Achieves reliable performance on OCT dataset  
+
+### (Add these images in your repo and link them here)
+- Training vs Validation Accuracy Graph  
+- Loss Curve  
+- Confusion Matrix  
+
+## Features
+- Upload OCT retinal image  
+- Real-time disease prediction  
+- Multi-class classification output  
+- Simple and interactive UI using Streamlit  
+
+## Tech Stack
+- Python  
+- PyTorch / TensorFlow *(use the correct one)*  
+- Streamlit  
+- Google Drive API  
+
+## Live Demo
+https://retinascanai.streamlit.app/
+
+## Installation & Usage
 
 ```bash
 # Clone the repository
-git clone [https://github.com/kpriyars/RETINASCAN_AI.git](https://github.com/kpriyars/RETINASCAN_AI.git)
+git clone https://github.com/kpriyars/RETINASCAN_AI.git
 
-# Install the clinical environment
+# Navigate to project folder
+cd RETINASCAN_AI
+
+# Install dependencies
 pip install -r requirements.txt
 
-# Launch the diagnostic dashboard
+# Run the application
 streamlit run app.py
