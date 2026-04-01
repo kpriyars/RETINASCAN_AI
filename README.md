@@ -44,13 +44,6 @@ This project builds an AI-based system to assist in fast and scalable preliminar
 - Transfer Learning using pretrained ImageNet weights
 - Fine-tuned for multi-class retinal image classification
 
-## Training Details
-- Loss Function: Cross-Entropy Loss  
-- Optimizer: Adam  
-- Epochs: ___  
-- Training Accuracy: ___%  
-- Validation Accuracy: ___%  
-
 ## Results
 - Multi-class classification across 4 retinal conditions  
 - Achieves reliable performance on OCT dataset  
