@@ -1,8 +1,3 @@
-<!-- Banner GIF -->
-<p align="center">
-  <img src="https://media1.tenor.com/m/uPjfbCiviRgAAAAC/eye-pupils.gif" width="100%" height="50%" />
-</p>
-
 <h1 align="center"> 👁️ RetinaScan AI: Deep Learning for Retinal Diagnostics </h1>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
